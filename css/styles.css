@@ -20,9 +20,10 @@ html {
   --backgr-filtr: #f5f4fa;
   --backgr-col: #2f303a;
   --icon-cl: #afb1b8;
-  
+
   /* Other */
   --accent-cl: #2196f3;
+  --timing-funcion: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -90,8 +91,8 @@ p {
 
 .logo-link {
   margin-right: 93px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo {
   font-family: Raleway;
@@ -137,6 +138,8 @@ p {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-funcion);
 }
 
 .nav-aktive {
@@ -153,7 +156,7 @@ p {
   position: absolute;
   border-bottom: 4px solid var(--accent-cl);
   left: 0;
-  bottom: -1px;
+  bottom: -2px;
   width: 100%;
   height: 4px;
   border-radius: 4px;
@@ -173,6 +176,8 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-funcion);
 }
 
 .link-mail:hover,
@@ -193,6 +198,8 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-funcion);
 }
 .smartphone {
   fill: currentColor;
@@ -291,12 +298,13 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 6;
   opacity: 1;
   visibility: visible;
   transition-property: opacity, visibility;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-funcion);
   transition-delay: 0;
 }
 
@@ -333,7 +341,7 @@ p {
   justify-content: center;
   margin: 8px 8px 0 0;
   z-index: 100;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--timing-funcion);
 }
 
 /* Наші переваги */
@@ -475,6 +483,8 @@ p {
   color: var(--icon-cl);
   background-color: var(--txt-but);
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-funcion);
 }
 
 .social-link:hover,
@@ -506,6 +516,8 @@ p {
   color: var(--icon-cl);
   border: 1px solid var(--icon-cl);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-funcion);
 }
 
 .frame:hover,
@@ -604,6 +616,8 @@ p {
   color: var(--txt-but);
   background-color: rgba(255, 255, 255, 10%);
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-funcion);
 }
 
 .social-link-footer:hover,
@@ -622,7 +636,8 @@ p {
 .filtr:focus {
   color: var(--txt-but);
   background-color: var(--accent-cl);
-  box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
 }
 
 .filtr {
@@ -637,9 +652,9 @@ p {
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
-
-  transition-property: background-color, color, box-sadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color, color, box-shadow;
+  transition-timing-function: var(--timing-funcion);
 }
 
 .filtr-list {
@@ -651,11 +666,10 @@ p {
 .projects-item {
   text-decoration: none;
   display: block;
-  transition-property: background-color, color, box-sadow;
+  transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, );
-  transition-delay: 0;
-}
+  transition-timing-function:var(--timing-funcion)
+  }
 
 .photo-set {
   position: relative;
@@ -676,7 +690,7 @@ p {
   transition-property: transform;
   transform: translateY(100%);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, );
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2);
 }
 
 .overlay-text {
@@ -693,7 +707,7 @@ p {
 
 .projects-item:hover .overlay,
 .projects-item:focus .overlay {
-  transform: translateY(0%)
+  transform: translateY(0%);
 }
 
 .photo-list {
