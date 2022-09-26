@@ -138,6 +138,7 @@ p {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-funcion);
 }
@@ -176,6 +177,7 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-funcion);
 }
@@ -198,6 +200,7 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-funcion);
 }
@@ -305,7 +308,6 @@ p {
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-funcion);
-  transition-delay: 0;
 }
 
 .is-hidden {
@@ -483,6 +485,7 @@ p {
   color: var(--icon-cl);
   background-color: var(--txt-but);
   border-radius: 50%;
+  transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-funcion);
 }
@@ -516,6 +519,7 @@ p {
   color: var(--icon-cl);
   border: 1px solid var(--icon-cl);
   border-radius: 4px;
+  transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-funcion);
 }
@@ -616,6 +620,7 @@ p {
   color: var(--txt-but);
   background-color: rgba(255, 255, 255, 10%);
   border-radius: 50%;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-funcion);
 }
@@ -652,8 +657,8 @@ p {
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
-  transition-duration: 250ms;
   transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-funcion);
 }
 
@@ -668,8 +673,8 @@ p {
   display: block;
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function:var(--timing-funcion)
-  }
+  transition-timing-function: var(--timing-funcion);
+}
 
 .photo-set {
   position: relative;
